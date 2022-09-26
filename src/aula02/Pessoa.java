@@ -4,8 +4,8 @@ public class Pessoa {
     String name;
     int age;
     String ID;
-    int weight;
-    int height;
+    double peso;
+    double altura;
 
     public Pessoa() {}
 
@@ -15,26 +15,26 @@ public class Pessoa {
         this.ID = ID;
     }
 
-    public Pessoa(String name, int age, String ID, int weight, int height) {
+    public Pessoa(String name, int age, String ID, double peso, double altura) {
         this.name = name;
         this.age = age;
         this.ID = ID;
-        this.weight = weight;
-        this.height = height;
+        this.peso = peso;
+        this.altura = altura;
     }
 
-    public double calcularIMC(int weight, int height) {
-        int calculo = weight / (height * height);
+    public double calcularIMC() {
+        double calculo = this.peso/(Math.pow(this.altura,2));
         if(calculo < 20) {
             return -1;
-        } else if (calculo <= 20 || calculo <= 25) {
-            return 0;
-        } else {
+        }else if(calculo > 25) {
             return 1;
+        } else {
+            return 0;
         }
     }
 
-    public boolean ehMaiorIdade(int age) {
+    public boolean ehMaiorIdade() {
         if(age >= 18) {
             return true;
         } else {
@@ -42,8 +42,8 @@ public class Pessoa {
         }
     }
 
-    @Override
-    public String toString() {
-        return name, age, ID, weight, height
-    }
+    // @Override
+    //public String toString() {
+      //  return name, age, ID, weight, height
+    //}
 }
