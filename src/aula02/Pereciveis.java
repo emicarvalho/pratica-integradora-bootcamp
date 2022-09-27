@@ -11,12 +11,9 @@ public class Pereciveis extends Produto {
     @Override
     public double calcular(int quantidadeDeProdutos) {
         if (this.diasParaVencer < 4) {
-            return super.calcular(quantidadeDeProdutos)/(5-diasParaVencer);
+            return super.calcular(quantidadeDeProdutos) / (5 - diasParaVencer);
+        }
         return super.calcular(quantidadeDeProdutos);
-    }
-
-    public int getDiasParaVencer() {
-        return diasParaVencer;
     }
 
     public void setDiasParaVencer(int diasParaVencer) {

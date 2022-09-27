@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="53c4e471-1587-43e3-a128-f85acc447553" name="Changes" comment="pratica integradora finalizada">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula02/Pereciveis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula02/Pereciveis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -52,7 +53,9 @@
       <workItem from="1664201419937" duration="594000" />
       <workItem from="1664220505347" duration="4460000" />
       <workItem from="1664226161104" duration="981000" />
-      <workItem from="1664227202309" duration="6110000" />
+      <workItem from="1664227202309" duration="6641000" />
+      <workItem from="1664295384358" duration="1753000" />
+      <workItem from="1664297142776" duration="718000" />
     </task>
     <task id="LOCAL-00001" summary="pratica">
       <created>1664200465357</created>
