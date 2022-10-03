@@ -1,4 +1,4 @@
-package com.emily.StringIII.exception;
+package com.emily.aulaAoVivo.exception;
 
 import lombok.Builder;
 import lombok.Data;
