@@ -14,11 +14,14 @@ import java.util.Date;
 public class Sinistro {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_sinister;
 
     private Date date_sinister;
 
     private Double economic_loss;
 
-    private Long id_veiculo;
+    @ManyToOne
+    @JoinColumn(name = "id_veiculo")
+    private Veiculo vehicle;
 }

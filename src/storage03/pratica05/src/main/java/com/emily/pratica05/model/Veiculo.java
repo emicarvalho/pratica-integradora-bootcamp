@@ -4,9 +4,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Getter
@@ -15,15 +15,19 @@ import java.util.Date;
 public class Veiculo {
 
     @Id
-    private Long id_veiculo;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id_vehicle;
 
-    private String placa;
+    private String board;
 
-    private String marca;
+    private String brand;
 
-    private String modelo;
+    private String model;
 
-    private Date data_fabricacao;
+    private Date date_fabrication;
 
     private int num_wheels;
+
+    @OneToMany(mappedBy = "vehicle")
+    private List<Sinistro> sinistros;
 }
