@@ -15,13 +15,13 @@ public class Sinistro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_sinister;
+    private int id_sinister;
 
     private Date date_sinister;
 
     private Double economic_loss;
 
     @ManyToOne
-    @JoinColumn(name = "id_veiculo")
+    @JoinColumn(name = "id_vehicle")
     private Veiculo vehicle;
 }

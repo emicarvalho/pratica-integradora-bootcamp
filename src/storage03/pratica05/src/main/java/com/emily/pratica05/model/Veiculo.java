@@ -16,7 +16,7 @@ public class Veiculo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id_vehicle;
+    private int id_vehicle;
 
     private String board;
 
