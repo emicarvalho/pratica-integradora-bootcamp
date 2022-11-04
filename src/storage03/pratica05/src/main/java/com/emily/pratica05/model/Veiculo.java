@@ -3,6 +3,7 @@ package com.emily.pratica05.model;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -24,7 +25,7 @@ public class Veiculo {
 
     private String model;
 
-    private Date date_fabrication;
+    private int ano_fabrication;
 
     private int num_wheels;
 

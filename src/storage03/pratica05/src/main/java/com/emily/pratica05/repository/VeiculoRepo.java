@@ -13,6 +13,6 @@ public interface VeiculoRepo extends JpaRepository<Veiculo, Integer> {
     @Query("select veiculo.board from Veiculo veiculo")
     List findAllBoard();
 
-    @Query("select veiculo.board, veiculo.brand from Veiculo veiculo where veiculo.date_fabrication = :date_fabrication")
-    List findAllVehiclesByDateFabrication(@Param("date_fabrication") String date_fabrication);
+    @Query("select veiculo.board, veiculo.brand from Veiculo veiculo where veiculo.ano_fabrication = :ano_fabrication")
+    List findAllVehiclesByDateFabrication(@Param("ano_fabrication") int ano_fabrication);
 }
